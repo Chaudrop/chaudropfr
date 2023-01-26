@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 80 80" width="80" height="80" fill="none" style="position:relative" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="gradient-0-0" gradientUnits="userSpaceOnUse" x1="45.224" y1="24" x2="45.224" y2="73.265" xlink:href="#gradient-0"/>
+    <linearGradient id="gradient-0">
+      <stop offset="0.642" style=""/>
+      <stop offset="1" style="stop-color: rgba(255, 255, 255, 0);"/>
+    </linearGradient>
+    <linearGradient id="gradient-1-0" gradientUnits="userSpaceOnUse" x1="53.778" y1="24" x2="53.778" y2="56" xlink:href="#gradient-1"/>
+    <linearGradient id="gradient-1">
+      <stop offset="0.394" style="stop-color: rgb(0, 0, 0);"/>
+      <stop offset="1" style="stop-color: rgba(255, 255, 255, 0);"/>
+    </linearGradient>
+  </defs>
+  <circle cx="40" cy="40" r="40" style="fill: rgb(255, 255, 255);"/>
+  <path d="M66.448 70.0091L30.7298 24H24V55.9867H29.3838V30.8371L62.2218 73.2645C63.7035 72.2727 65.1152 71.1846 66.448 70.0091Z" style="fill: url(#gradient-0-0);"/>
+  <rect height="32" width="5.33333" x="51.1113" y="24" style="fill: url(#gradient-1-0);"/>
+</svg>
