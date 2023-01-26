@@ -77,7 +77,11 @@ export default function About() {
             . I mainly work with Javascript Frameworks like React or Node, this
             website was made with NextJS and TailwindCSS. You can find the
             source code on my{' '}
-            <a className="font-bold text-gray-200" href="" target="_blank">
+            <a
+              className="font-bold text-gray-200"
+              href="https://github.com/Chaudrop/chaudropfr"
+              target="_blank"
+            >
               Github
             </a>
             .

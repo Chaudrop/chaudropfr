@@ -43,7 +43,7 @@ export default function NavBar() {
 
         <div className="flex space-x-6 text-base text-white">
           <a
-            href="#"
+            href="https://fr.linkedin.com/in/pierre-chaudron-35754515a"
             target="_blank"
             className="flex shrink-0 items-center gap-x-2"
           >
@@ -57,7 +57,7 @@ export default function NavBar() {
             <span className="hidden md:inline-block">LinkedIn</span>
           </a>
           <a
-            href="#"
+            href="https://github.com/Chaudrop"
             target="_blank"
             className="flex shrink-0 items-center gap-x-2"
           >
