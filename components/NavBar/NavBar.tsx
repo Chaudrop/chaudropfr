@@ -72,7 +72,7 @@ export default function NavBar() {
           </a>
           <a
             href="mailto:chaudronpierre8@gmail.com"
-            className="flex shrink-0 items-center gap-x-2 border-2 green-border rounded-lg p-1 px-3"
+            className="flex shrink-0 items-center gap-x-2 border-2 border-lightgreen rounded-lg p-1 px-3"
           >
             <EnvelopeIcon className="h-6 w-6" />
             <span className="hidden md:inline-block">Contact</span>

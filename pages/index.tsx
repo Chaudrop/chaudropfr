@@ -7,6 +7,8 @@ import styles from '../styles/Home.module.css'
 import NavBar from 'components/NavBar/NavBar'
 import About from 'components/About/About'
 import Skills from 'components/Skills/Skills'
+import Experience from 'components/Experience/Experience'
+import Footer from 'components/Footer/Footer'
 
 export default function Home() {
   const [scrollToTopButton, setScrollToTopButton] = useState<Boolean>(false)
@@ -35,17 +37,19 @@ export default function Home() {
       <div
         className={clsx(
           scrollToTopButton ? 'visible opacity-100' : 'invisible opacity-0',
-          'transition-all ease-in green-background cursor-pointer p-5 fixed rounded-full bottom-6 right-6 bg-green-500'
+          'shadow-2xl transition-all ease-in bg-lightgreen cursor-pointer p-5 fixed rounded-full bottom-6 right-6'
         )}
         onClick={() => window.scrollTo(0, 0)}
       >
         <ArrowUpIcon className="h-8 w-8" />
       </div>
-      <main className={styles.main}>
+      <main className="min-h-screen main-gradient-background">
         <NavBar />
         <About />
       </main>
       <Skills />
+      <Experience />
+      <Footer />
     </>
   )
 }

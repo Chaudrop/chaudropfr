@@ -13,10 +13,10 @@ export default function About() {
             <div className="text-white text-base md:text-2xl font-semibold font-mono">
               Hello, I'm Pierre
             </div>
-            <div className="green text-md md:text-5xl font-bold font-mono">
+            <div className="text-lightgreen text-md md:text-5xl font-bold font-mono">
               Full-Stack Developer
             </div>
-            <div className="text-slate-100 text-base md:text-xl my-5">
+            <div className="text-slate-100 text-justify text-base md:text-xl my-5">
               I'm a
               <Image
                 src="/france-flag-icon.svg"
@@ -31,7 +31,7 @@ export default function About() {
             <a
               href="#"
               target="_blank"
-              className="flex items-center gap-x-2 border-2 green-border w-fit rounded py-2 px-4"
+              className="flex items-center gap-x-2 border-2 border-lightgreen w-fit rounded py-2 px-4"
             >
               <Image
                 src="/icon-cv.png"
@@ -62,8 +62,10 @@ export default function About() {
           />
         </div>
         <div className="flex justify-center gap-4 md:gap-8 flex-col order-1 sm:order-2">
-          <div className="green text-4xl font-bold font-mono">About me</div>
-          <div className="text-gray-300 text-sm md:text-lg">
+          <div className="text-lightgreen text-4xl font-bold font-mono">
+            About me
+          </div>
+          <div className="text-gray-300 text-justify text-sm md:text-lg">
             My name is Pierre Chaudron and I'm a Full-Stack web developer based
             in France
             <Image

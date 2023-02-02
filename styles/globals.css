@@ -110,14 +110,10 @@ a {
   }
 }
 
-.green {
-  color: #8cff1a;
+.main-gradient-background {
+  background: linear-gradient(345deg, rgb(85, 85, 85) 0%, rgb(0, 0, 0) 100%);
 }
 
-.green-border {
-  border-color: #8cff1a;
-}
-
-.green-background {
-  background-color: #8cff1a;
+.main-gradient-background-reverse {
+  background: linear-gradient(165deg, rgb(85, 85, 85) 0%, rgb(0, 0, 0) 100%);
 }
