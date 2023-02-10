@@ -34,8 +34,24 @@ const Experiences: Array<ExperienceType> = [
     ],
   },
   {
-    name: 'Parkki - 2020 (6 months)',
-    title: 'Full-Stack Developer Internship',
+    name: 'Chung Ang University - 2020 (4 months)',
+    title: 'IT Student',
+    description: [
+      "Semestre à Séoul avec le programme international d'Epitech.",
+      'Web Development (HTML, CSS, Js), Linux Development (Kernel), Big Data.',
+    ],
+    companyIcon: companyIcons.chungAngIcon,
+    techIcons: [
+      techIcons.htmlIcon,
+      techIcons.cssIcon,
+      techIcons.javascriptIcon,
+      techIcons.linuxIcon,
+      techIcons.bigdataIcon,
+    ],
+  },
+  {
+    name: 'Parkki - 2020 (6 + 4 months)',
+    title: 'Full-Stack Developer Internship + Freelance',
     description: [
       "Développement d'un Back office pour gérer les données internes de l'entreprise.",
       'Front web fait en ReactJS avec Material-UI et Redux.',
@@ -61,6 +77,27 @@ const Experiences: Array<ExperienceType> = [
     companyIcon: companyIcons.lesaffreIcon,
     techIcons: [techIcons.webdev23Icon, techIcons.csharpIcon],
   },
+  {
+    name: 'Epitech International Track - 2017-2022',
+    title: "Student, Expert en technologie de l'information",
+    description: [
+      'Programmation graphique, développement web et mobile, Devops, programmation système, mathématiques.',
+    ],
+    companyIcon: companyIcons.epitechIcon,
+    techIcons: [
+      techIcons.cIcon,
+      techIcons.cppIcon,
+      techIcons.reactIcon,
+      techIcons.nodeIcon,
+      techIcons.mongodbIcon,
+      techIcons.pythonIcon,
+      techIcons.flutterIcon,
+      techIcons.unityIcon,
+      techIcons.linuxIcon,
+      techIcons.gitIcon,
+      techIcons.dockerIcon,
+    ],
+  },
 ]
 
 const TimelineStep = () => {
@@ -83,39 +120,41 @@ const ExperienceCard = (props: ExperienceCardPropsType) => {
   const { exp, left } = props
 
   return (
-    <div className={clsx('flex md:contents', left && 'flex-row-reverse')}>
+    <div
+      key={exp.name}
+      className={clsx('flex md:contents', left && 'flex-row-reverse')}
+    >
       {!left && <TimelineStep />}
       <div
         className={clsx(
           left ? 'col-start-1 col-end-5' : 'col-start-6 col-end-10',
-          'bg-expgray p-4 rounded-xl my-4 ml-auto shadow-md w-full'
+          'bg-backgroundgray p-4 rounded-xl my-4 ml-auto shadow-md w-full'
         )}
       >
         <Image
-          className="inline-block align-middle mr-2"
+          className="inline-block align-middle mr-2 w-auto"
           src={exp.companyIcon}
           alt={'company logo'}
           height={22}
         />
-        <h3 className="font-semibold text-lg mb-1 inline-block align-sub">
+        <h3 className="font-semibold text-lg mb-2 inline-block align-sub">
           {exp.name}
         </h3>
-        <p className="text-justify text-sm text-neutral-300 font-medium mb-1">
+        <p className="text-justify text-sm text-neutral-300 font-medium mb-2">
           {exp.title}
         </p>
-        <p className="text-justify text-sm text-white mb-2">
+        <p className="text-justify text-sm text-white mb-3">
           {typeof exp.description === 'string'
             ? exp.description
-            : exp.description.map((line) => (
-                <>
+            : exp.description.map((line, i) => (
+                <span key={i} className="block">
                   {line}
-                  <br />
-                </>
+                </span>
               ))}
         </p>
         <div className="flex gap-2 flex-wrap">
-          {exp.techIcons.map((icon) => (
-            <Image src={icon} alt={'tech icon'} height={20} />
+          {exp.techIcons.map((icon, i) => (
+            <Image key={i} src={icon} alt={'tech icon'} height={20} />
           ))}
         </div>
       </div>
@@ -136,7 +175,7 @@ export default function Experience() {
         </div>
         <div className="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-white">
           {Experiences.map((exp, i) => (
-            <ExperienceCard exp={exp} left={i % 2 === 0} />
+            <ExperienceCard key={i} exp={exp} left={i % 2 === 0} />
           ))}
         </div>
       </div>

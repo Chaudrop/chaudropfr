@@ -47,6 +47,7 @@ export default function About() {
             className="w-auto h-48 md:h-56 lg:h-96"
             src={photo}
             alt="Photo"
+            priority
           />
         </div>
       </div>
@@ -59,6 +60,7 @@ export default function About() {
             className="rounded-full object-cover w-60 h-60 md:w-80 md:h-80"
             src={pcWork}
             alt="pc"
+            priority
           />
         </div>
         <div className="flex justify-center gap-4 md:gap-8 flex-col order-1 sm:order-2">

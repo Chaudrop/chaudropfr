@@ -1,10 +1,10 @@
 import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { Bars3Icon, ChartBarIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
+import styles from '../components/NavBar/NavBar.module.css'
 import Image from 'next/image'
 import { EnvelopeIcon } from '@heroicons/react/24/solid'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Popover, Transition } from '@headlessui/react'
-import styles from './NavBar.module.css'
 
 export default function NavBar() {
   return (
@@ -22,14 +22,23 @@ export default function NavBar() {
             </span>
           </a>
 
-          <nav className="hidden sm:flex space-x-6 lg:space-x-16 text-lg font-medium text-slate-100 font-mono">
-            <a href="#about" className="hover:text-slate-300 transition">
+          <nav className="hidden sm:flex space-x-6 lg:space-x-16">
+            <a
+              href="#about"
+              className="text-lg font-medium text-slate-100 hover:text-slate-300 font-mono"
+            >
               About
             </a>
-            <a href="#skills" className="hover:text-slate-300 transition">
+            <a
+              href="#skills"
+              className="text-lg font-medium text-slate-100 hover:text-slate-300 font-mono"
+            >
               Skills
             </a>
-            <a href="#experience" className="hover:text-slate-300 transition">
+            <a
+              href="#experience"
+              className="text-lg font-medium text-slate-100 hover:text-slate-300 font-mono"
+            >
               Experience
             </a>
           </nav>
@@ -73,7 +82,7 @@ export default function NavBar() {
           </div>
 
           <div className="sm:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-lightgreen p-2 text-backgroundgray hover:text-black hover:bg-[#7adc18] transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-100">
+            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-black hover:bg-gray-100 hover:text-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
@@ -93,7 +102,7 @@ export default function NavBar() {
           focus
           className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
         >
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-[#222222] shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <a href="#">
@@ -107,34 +116,40 @@ export default function NavBar() {
                   </span>
                 </a>
                 <div className="-mr-3 -mt-1">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-lightgreen p-2 text-backgroundgray hover:text-black hover:bg-[#7adc18] transition focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-100">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
 
               <div className="my-6 py-6 border-y">
-                <nav className="grid gap-y-8 text-lg font-medium text-slate-100 font-mono">
+                <nav className="grid gap-y-8">
                   <Popover.Button
                     as="a"
                     href="#about"
-                    className="-m-3 flex items-center rounded-md p-3 hover:bg-backgroundgray transition hover:text-slate-300"
+                    className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                   >
-                    <span className="ml-3">About</span>
+                    <span className="ml-3 text-base font-medium text-gray-900">
+                      About
+                    </span>
                   </Popover.Button>
                   <Popover.Button
                     as="a"
                     href="#skills"
-                    className="-m-3 flex items-center rounded-md p-3 hover:bg-backgroundgray transition hover:text-slate-300"
+                    className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                   >
-                    <span className="ml-3">Skills</span>
+                    <span className="ml-3 text-base font-medium text-gray-900">
+                      Skills
+                    </span>
                   </Popover.Button>
                   <Popover.Button
                     as="a"
                     href="#experience"
-                    className="-m-3 flex items-center rounded-md p-3 hover:bg-backgroundgray transition hover:text-slate-300"
+                    className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                   >
-                    <span className="ml-3">Experience</span>
+                    <span className="ml-3 text-base font-medium text-gray-900">
+                      Experience
+                    </span>
                   </Popover.Button>
                 </nav>
               </div>

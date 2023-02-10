@@ -13,6 +13,18 @@ import phpIcon from './php-icon.png'
 import webdev23Icon from './webdev23-icon.png'
 import symfonyIcon from './symfony-icon.png'
 import csharpIcon from './csharp-icon.png'
+import linuxIcon from './linux-icon.png'
+import htmlIcon from './html-icon.png'
+import cssIcon from './css-icon.png'
+import javascriptIcon from './javascript-icon.png'
+import bigdataIcon from './bigdata-icon.png'
+import cIcon from './c-icon.png'
+import cppIcon from './cpp-icon.png'
+import pythonIcon from './python-icon.png'
+import flutterIcon from './flutter-icon.png'
+import unityIcon from './unity-icon.png'
+import gitIcon from './git-icon.png'
+import dockerIcon from './docker-icon.png'
 
 export default {
   reactIcon,
@@ -30,4 +42,16 @@ export default {
   webdev23Icon,
   symfonyIcon,
   csharpIcon,
+  linuxIcon,
+  htmlIcon,
+  cssIcon,
+  javascriptIcon,
+  bigdataIcon,
+  cIcon,
+  cppIcon,
+  pythonIcon,
+  flutterIcon,
+  unityIcon,
+  gitIcon,
+  dockerIcon,
 }

@@ -34,7 +34,11 @@ export default function Skills() {
               key={skill.name}
               className="p-4 bg-[#1f1f1f] hover:bg-[#171717] transition text-white rounded-lg cursor-pointer flex gap-3 items-center"
             >
-              <Image src={skill.icon} alt={`${skill.name} logo`} height={26} />
+              <Image
+                src={skill.icon}
+                alt={`${skill.name} logo`}
+                className="h-7 w-auto"
+              />
               {skill.name}
             </div>
           ))}
